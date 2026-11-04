@@ -10,20 +10,40 @@ public class Main {
             System.out.println("4. Dividir");
             System.out.println("5. Salir");
             System.out.print("Elige una opción: ");
-            try {
-                opcion = Integer.parseInt(sc.nextLine());
-                if (opcion >= 1 && opcion <= 4) {
-                    System.out.print("Primer número: ");
-                    int a = Integer.parseInt(sc.nextLine());
-                    System.out.print("Segundo número: ");
-                    int b = Integer.parseInt(sc.nextLine());
-                    if (opcion == 1) {
-                        System.out.println("Resultado: " + (a + b));
-                    }
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Entrada no válida");
-            }
+            opcionMenu(sc, opcion);
         }
+    }
+
+    public static void opcionMenu(Scanner sc, int opcion){
+        opcion = sc.nextInt();
+        switch(opcion){
+            case 1:
+                suma();
+                break;
+            case 2:
+                resta();
+                break;
+            case 3:
+                multiplicar();
+                break;
+            case 4:
+                dividir();
+                break;
+        }
+    }
+    public static void suma(){
+
+    }
+
+    public static void resta(){
+
+    }
+
+    public static void multiplicar(){
+
+    }
+
+    public static void dividir(){
+
     }
 }
