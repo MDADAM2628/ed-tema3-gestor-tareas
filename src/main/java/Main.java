@@ -19,17 +19,20 @@ public class Main {
         switch(opcion){
             case 1:
                 suma();
+                break;
             case 2:
                 resta();
+                break;
             case 3:
                 multiplicar();
+                break;
             case 4:
                 dividir();
-
+                break;
         }
     }
     public static void suma(){
-    
+
     }
 
     public static void resta(){
