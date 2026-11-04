@@ -21,7 +21,7 @@ public class Main {
                 suma();
                 break;
             case 2:
-                resta();
+                System.out.println("El resultado de la resta es " + resta(sc) + ".");
                 break;
             case 3:
                 multiplicar();
@@ -35,8 +35,13 @@ public class Main {
 
     }
 
-    public static void resta(){
-
+    public static double resta(Scanner sc){
+        System.out.print("Introduzca el restando 1: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Introduzca el restando 2: ");
+        double num2 = sc.nextDouble();
+        double result = num1 - num2;
+        return result;
     }
 
     public static void multiplicar(){
