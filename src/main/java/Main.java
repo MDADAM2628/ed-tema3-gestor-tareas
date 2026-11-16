@@ -18,7 +18,7 @@ public class Main {
         opcion = sc.nextInt();
         switch(opcion){
             case 1:
-                suma();
+                suma(sc);
                 break;
             case 2:
                 System.out.println("El resultado de la resta es " + resta(sc) + ".");
@@ -31,8 +31,13 @@ public class Main {
                 break;
         }
     }
-    public static void suma(){
-
+    public static double suma(Scanner sc){
+        System.out.print("Introduzca el sumando 1: ");
+        double num1 = sc.nextDouble();
+        System.out.print("Introduzca el sumando 2: ");
+        double num2 = sc.nextDouble();
+        double result = num1 + num2;
+        return result;
     }
 
     public static double resta(Scanner sc){
